@@ -1,0 +1,47 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    NameEditBox: TEdit;
+    DisplayNameButton: TButton;
+    EnterNameLabel: TLabel;
+    procedure DisplayNameButtonClick(Sender: TObject);
+    procedure OnNameEditBoxEnter(Sender: TObject);
+    procedure OnNameEditBoxKeyPress(Sender: TObject; var Key: Char);
+
+  private
+    { Private declarations }
+    procedure DisplayName(name: string);
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.DisplayName(name: string);
+begin
+  ShowMessage(NameEditBox.Text);
+end;
+
+procedure TForm1.DisplayNameButtonClick(Sender: TObject);
+begin
+  DisplayName(NameEditBox.Text);
+end;
+
+procedure TForm1.OnNameEditBoxKeyPress(Sender: TObject; var Key: Char);
+begin
+//  DisplayName(NameEditBox.Text);
+end;
+
+end.

@@ -1,0 +1,36 @@
+program ConsoleSandbox;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+procedure ChangeStr(var str: string);
+begin
+  str := 'Hello, world!';
+end;
+
+procedure PrintStr(str: string);
+begin
+  Writeln(str);
+end;
+
+var
+  a:     Int32;
+  b:     Int32;
+  iPtr: ^Int32;
+begin
+  try
+    a := 5;
+    iPtr := @a;
+    a := 7;
+    b := iPtr^;
+    Writeln(IntToStr(b));
+    Sleep(2000);
+  except
+    on E: Exception do
+      Writeln(E.ClassName, ': ', E.Message);
+  end;
+end.

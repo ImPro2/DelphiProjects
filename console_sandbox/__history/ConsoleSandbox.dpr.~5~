@@ -1,0 +1,72 @@
+program ConsoleSandbox;
+
+{$APPTYPE CONSOLE}
+{$R *.res}
+
+uses
+  System.SysUtils,
+  Rectangle in 'Rectangle.pas';
+
+type
+  Rectangle = class
+    public
+      constructor Create();
+      destructor  Destroy();
+
+      procedure SetWidthAndHeight(w, h: int32);
+      function GetWidth():  int32;
+      function GetHeight(): int32;
+
+      procedure Draw();
+
+    public
+      Width, Height: int32;
+  end;
+
+constructor Rectangle.Create();
+begin
+  Width := 0;
+  Height := 0;
+end;
+
+destructor Rectangle.Destroy();
+begin
+end;
+
+procedure Rectangle.SetWidthAndHeight(w, h: int32);
+begin
+  Width  := w;
+  Height := h;
+end;
+
+function Rectangle.GetWidth(): int32;
+begin
+  GetWidth := Width;
+end;
+
+function Rectangle.GetHeight(): int32;
+begin
+  GetHeight := Height;
+end;
+
+procedure Rectangle.Draw();
+var
+  x, y: int32;
+begin
+  for y := 1 to Height do
+  begin
+    for x := 1 to Width do
+      write(' * ');
+    writeln('');
+  end;
+
+end;
+
+var
+  rect1: Rectangle;
+begin
+  //rect1.Create();
+  rect1.Width  := 5;
+  rect1.Height := 5;
+  rect1.Draw();
+end.
