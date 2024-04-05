@@ -1,0 +1,40 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 441
+  ClientWidth = 624
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object NameButton: TButton
+    Left = 224
+    Top = 288
+    Width = 75
+    Height = 25
+    Caption = 'Name'
+    TabOrder = 0
+    OnClick = NameButtonClick
+  end
+  object SurnameButton: TButton
+    Left = 392
+    Top = 296
+    Width = 75
+    Height = 25
+    Caption = 'Surname'
+    TabOrder = 1
+    OnClick = SurnameButtonClick
+  end
+  object DisplayPanel: TPanel
+    Left = 296
+    Top = 144
+    Width = 185
+    Height = 113
+    TabOrder = 2
+    OnClick = DisplayPanelClick
+  end
+end

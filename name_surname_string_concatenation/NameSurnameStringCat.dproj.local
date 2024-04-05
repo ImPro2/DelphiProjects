@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2024/04/04 09:23:59.367,=Z:\dev\delphi_projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/04 09:28:41.754,Z:\dev\delphi_projects\name_surname_string_concatenation\Unit1.pas=Z:\dev\delphi_projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/04 09:28:41.754,Z:\dev\delphi_projects\name_surname_string_concatenation\Unit1.dfm=Z:\dev\delphi_projects\Unit1.dfm</Transaction>
+    <Transaction>2024/04/04 09:29:00.269,Z:\dev\delphi_projects\name_surname_string_concatenation\NameSurnameStringCat.dproj=Z:\dev\delphi_projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
