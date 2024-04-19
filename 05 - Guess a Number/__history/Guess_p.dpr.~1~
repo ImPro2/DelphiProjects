@@ -1,0 +1,14 @@
+program Guess_p;
+
+uses
+  Forms,
+  Unit1 in 'Unit1.pas' {frmGuessANumber};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmGuessANumber, frmGuessANumber);
+  Application.Run;
+end.

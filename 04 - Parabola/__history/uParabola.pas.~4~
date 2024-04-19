@@ -1,0 +1,48 @@
+unit uParabola;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls;
+
+type
+  TfrmParabola = class(TForm)
+    lblMessage: TLabel;
+    lblA: TLabel;
+    lblB: TLabel;
+    lblC: TLabel;
+    edtA: TEdit;
+    edtB: TEdit;
+    edtC: TEdit;
+    redDisplay: TRichEdit;
+    Button1: TButton;
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmParabola: TfrmParabola;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmParabola.Button1Click(Sender: TObject);
+var rA,rB,rC,rX1,rX2:real;
+begin
+   rA:=StrToFloat(edtA.text);
+   rB:=StrToFloat(edtB.Text);
+   rC:=StrToFloat(edtC.Text);
+   rX1:= (-rB+Sqrt(sqr(rB)-4*rA*rC))/(2*rA);
+   rX2:= (-rB-Sqrt(sqr(rB)-4*rA*rC))/(2*rA);
+   redDisplay.Clear;
+   redDisplay.Lines.Add('X1 ='+FloatToStr(rX1));
+   redDisplay.Lines.Add('X2 ='+FloatToStr(rX2));
+end;
+
+end.
+

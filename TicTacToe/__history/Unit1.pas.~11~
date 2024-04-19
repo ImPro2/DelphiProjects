@@ -1,0 +1,87 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    btA1: TButton;
+		btA2: TButton;
+		btA3: TButton;
+		btB1: TButton;
+		btB2: TButton;
+		btB3: TButton;
+		btC1: TButton;
+		btC2: TButton;
+		btC3: TButton;
+    procedure btA1Click(Sender: TObject);
+    procedure btA2Click(Sender: TObject);
+    procedure btA3Click(Sender: TObject);
+    procedure btB1Click(Sender: TObject);
+    procedure btB2Click(Sender: TObject);
+    procedure btB3Click(Sender: TObject);
+    procedure btC1Click(Sender: TObject);
+    procedure btC2Click(Sender: TObject);
+    procedure btC3Click(Sender: TObject);
+  private
+    { Private declarations }
+	public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.btA1Click(Sender: TObject);
+begin
+  //asfd
+end;
+
+procedure TForm1.btA2Click(Sender: TObject);
+begin
+//asdf
+end;
+
+procedure TForm1.btA3Click(Sender: TObject);
+begin
+//asdf
+end;
+
+procedure TForm1.btB1Click(Sender: TObject);
+begin
+//asdf
+end;
+
+procedure TForm1.btB2Click(Sender: TObject);
+begin
+//asdf
+end;
+
+procedure TForm1.btB3Click(Sender: TObject);
+begin
+//asdf
+end;
+
+procedure TForm1.btC1Click(Sender: TObject);
+begin
+//asdf
+end;
+
+procedure TForm1.btC2Click(Sender: TObject);
+begin
+//asdf
+end;
+
+procedure TForm1.btC3Click(Sender: TObject);
+begin
+//asdf
+end;
+
+end.

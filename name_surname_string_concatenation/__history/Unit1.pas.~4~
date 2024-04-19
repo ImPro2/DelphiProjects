@@ -37,12 +37,12 @@ var
 begin
   SurnameLength := length(sSurname);
 
-  for i := 0 to length(sName) do
+  for i := 1 to length(sName) do
   begin
-    sReverseName := sReverseName + Name[length(Name) - i];
+    sReverseName[i] := Name[length(Name) - i];
   end;
 
-  DisplayPanel.Caption := String(sReverseName) + ' ' + sSurname + ', Surname Length: ' + IntToStr(SurnameLength);
+  DisplayPanel.Caption := sReverseName + ' ' + sSurname + ', Surname Length: ' + IntToStr(SurnameLength);
 end;
 
 procedure TForm1.NameButtonClick(Sender: TObject);
